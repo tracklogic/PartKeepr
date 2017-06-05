@@ -286,6 +286,11 @@ Ext.define('PartKeepr.PartsGrid', {
                 flex: 2,
                 minWidth: 150
             }, {
+                header: i18n("Internal Part"),
+                dataIndex: 'internalPartNumber',
+                minWidth: 150,
+                renderer: Ext.util.Format.htmlEncode
+            }, {
                 header: i18n("Storage Location"),
                 dataIndex: 'storageLocation.name'
             }, {
